@@ -23,7 +23,7 @@ pnpm run lint
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
 
-### background.js，content_scripts：
+### 引入的框架（vue-cli-plugin-browser-extension） background.js，content_scripts：
 ```
 首先在：vue.config中进行设置：
 pluginOptions: {
@@ -67,7 +67,7 @@ mainifest.json中引入：
 ```
 
 
-### 引入的图片编辑器，可自定义部分：
+### 引入的图片编辑器（toast-ui），可自定义部分：
 ```
 common.bi.image - 品牌图标图片
  common.bisize.width - 图标图像宽度
