@@ -24,6 +24,8 @@ pnpm run lint
 See [Configuration Reference](https://cli.vuejs.org/config/).
 
 ### 引入的框架（vue-cli-plugin-browser-extension） background.js，content_scripts：
+See [vue-cli-plugin-browser-extension](https://github.com/adambullmer/vue-cli-plugin-browser-extension).
+
 ```
 首先在：vue.config中进行设置：
 pluginOptions: {
@@ -68,6 +70,7 @@ mainifest.json中引入：
 
 
 ### 引入的图片编辑器（toast-ui），可自定义部分：
+See [ImageEditor API](http://nhn.github.io/tui.image-editor/latest/ImageEditor#addIcon).
 ```
 common.bi.image - 品牌图标图片
  common.bisize.width - 图标图像宽度
