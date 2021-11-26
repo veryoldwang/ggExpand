@@ -1,0 +1,43 @@
+{
+  "manifest_version": 2,
+  "name":"ATTA-Dream-Maker",
+  "homepage_url": "https://atta.zone",
+  "description": "A Vue Browser Extension",
+  "default_locale": "en",
+  "permissions": [
+    "<all_urls>",
+    "*://*/*",
+    "storage",
+    "activeTab",
+    "contextMenus",
+    "tabs",
+    "webRequest",
+    "webRequestBlocing"
+  ],
+  "icons": {
+    "16": "icons/16.png",
+    "48": "icons/48.png",
+    "128": "icons/128.png"
+  },
+  "web_accessible_resources":["js/injected/*","js/web3/*"],
+  "content_scripts": [
+    {
+      "matches": ["https://twitter.com/*"],
+      "js": ["./jq.min.js","./js/testDom.js","./js/imageEdit.js"],
+      "run_at": "document_end"
+    }
+  ],
+  "background": {
+    "scripts": [
+      "./js/background.js"
+    ]
+  },
+  "browser_action": {
+    "default_popup": "pages.html",
+    "default_title": "ATTA-Dream-Maker",
+    "default_icon": {
+      "19": "icons/19.png",
+      "38": "icons/38.png"
+    }
+  }
+}
