@@ -62,7 +62,9 @@ mainifest.json中引入：
 
 
 ### 引入的图片编辑器，可自定义部分：
+```
 common.bi.image - 品牌图标图片
+```
  common.bisize.width - 图标图像宽度
  common.bisize.height - 图标图像高度
  common.backgroundImage - 背景图片
